@@ -48,6 +48,9 @@ function recFinalResult(){
     rectangleField.innerText= newRectangleResult.toFixed(2);
 }
 
+// # utility 3
+
+
 // ! UTILITY
 
 // # 1 btn-triangle

@@ -44,34 +44,36 @@
     <!-- ! geometries -->
 
     <section>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-3 font-semibold">
+      <div id="display-geo" class="grid grid-cols-1 md:grid-cols-4 gap-3 font-semibold">
         <!-- # triangle -->
-        <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
-          <img class="images" src="images/triangle.png" alt="" />
-          <p class="text-slate-600 text-3xl font-semibold my-4">Triangle</p>
-          <p class="text-base text-slate-600">Area (A) = 0.5 X b X h</p>
-          <div class="grid md:grid-cols-4 items-center justify-center mt-6">
-            <input
-              id="b-triangle"
-              class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
-              type="text"
-              placeholder="b"
-            />
-            <p class="m-2 text-lg text-slate-600">cm</p>
-            <input
-              id="h-triangle"
-              class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
-              type="text"
-              placeholder="h"
-            />
-            <p class="m-2 text-lg text-slate-600">cm</p>
+        <div class="circle">
+          <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
+            <img class="images" src="images/triangle.png" alt="" />
+            <p class="text-slate-600 text-3xl font-semibold my-4">Triangle</p>
+            <p class="text-base text-slate-600">Area (A) = 0.5 X b X h</p>
+            <div class="grid md:grid-cols-4 items-center justify-center mt-6">
+              <input
+                id="b-triangle"
+                class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
+                type="text"
+                placeholder="b"
+              />
+              <p class="m-2 text-lg text-slate-600">cm</p>
+              <input
+                id="h-triangle"
+                class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
+                type="text"
+                placeholder="h"
+              />
+              <p class="m-2 text-lg text-slate-600">cm</p>
+            </div>
+            <button
+              id="btn-triangle"
+              class="text-white text-2xl font-bold px-6 bg-blue-400 rounded"
+            >
+              Calculate
+            </button>
           </div>
-          <button
-            id="btn-triangle"
-            class="text-white text-2xl font-bold px-6 bg-blue-400 rounded"
-          >
-            Calculate
-          </button>
         </div>
 
         <!-- # rectangle -->
@@ -121,7 +123,7 @@
           <p class="text-2xl underline text-slate-600 mb-3">Area Calculation</p>
           
           <!-- # triangle -->
-          <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
+          <div id="display-triangle" class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
             <p>
               1. Triangle<span id="triangle-result" class="ml-2">00</span> cm<sup>2</sup>
             </p>

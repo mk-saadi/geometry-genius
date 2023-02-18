@@ -9,27 +9,48 @@
 </head>
 <body>
     <main>
-        <button class="text-white text-2xl font-bold px-8 bg-blue-400 rounded">
+        <button class="text-white text-4xl font-bold px-8 m-8 bg-blue-400 rounded drop-shadow-xl">
             <a href="index.html">Home</a>
         </button>
-        <!-- # 1 -->
         <div>
-            <h1>1. What is a DOM?</h1>
-        </div>
-
-        <!-- # 2 -->
-        <div>
-            <h1>2. How to select element from DOM?</h1>
-        </div>
-
-        <!-- # 3 -->
-        <div>
-            <h1>3. What is Event Bubble?</h1>
-        </div>
-
-        <!-- # 4 -->
-        <div>
-            <h1>4. What is Callback Function?</h1>
+            <!-- # 1 -->
+            <div class="border border-sky-400 drop-shadow-lg m-4 p-4 bg-slate-300 rounded-xl">
+                <h1 class="text-3xl">1. What is a DOM?</h1>
+                <p class="text-xl"><span class="font-bold text-rose-400">Document Object Model
+                </span>It is a programming interface for web documents that allows developers to dynamically manipulate the contents and structure of web pages.</p>
+                <br>
+                <p class="text-xl">The DOM is an essential part of modern web development and is used in a variety of applications, including dynamic web pages, web applications, and mobile apps. It allows developers to create interactive and responsive user interfaces that can adapt to user input and data changes.
+                </p>
+            </div>
+    
+            <!-- # 2 -->
+            <div class="border border-sky-400 drop-shadow-lg m-4 p-4 bg-slate-300 rounded-xl">
+                <h1 class="text-3xl">2. How to select element from DOM?</h1>
+                <p class="text-xl">In order to select an element from DOM, you can use the DOM API methods provided by JavaScript. Here are a few common methods to select an element from the DOM:
+                    <ol class="text-rose-400 mt-4 ml-8 text-lg">
+                        <li>getElementById</li>
+                        <li>getElementsByClassName</li>
+                        <li>getElementsByTagName</li>
+                        <li>querySelector</li>
+                        <li>querySelectorAll</li>
+                    </ol>
+                </p>
+            </div>
+    
+            <!-- # 3 -->
+            <div class="border border-sky-400 drop-shadow-lg m-4 p-4 bg-slate-300 rounded-xl">
+                <h1 class="text-3xl">3. What is Event Bubble?</h1>
+                <p class="text-xl"><span class="font-bold text-rose-400">Event Bubble</span> is a concept in the DOM. It happens when an element receives an event, and that event bubbles up to its parent and ancestor elements in the DOM tree until it gets to the root element</p>
+            </div>
+    
+            <!-- # 4 -->
+            <div class="border border-sky-400 drop-shadow-xl m-4 p-4 bg-slate-300 rounded-xl">
+                <h1 class="text-3xl">4. What is Callback Function?</h1>
+                <p class="text-xl">A <span class="font-bold text-rose-400">callback function</span> is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+                </p>
+                <br>
+                <p class="text-xl">Callbacks are often used to continue code execution after an asynchronous operation has completed — these are called asynchronous callbacks. A good example is the callback functions executed inside a .then() block chained onto the end of a promise after that promise fulfills or rejects. This structure is used in many modern web APIs, such as fetch().</p>
+            </div>
         </div>
     </main>
 </body>
