@@ -21,7 +21,7 @@ function triFinalResult(){
     const triangleResult = parseFloat(triangleString);
 
     const newTriangleResult= triangleCalculationResult+ triangleResult;
-    triangleField.innerText= newTriangleResult;
+    triangleField.innerText= newTriangleResult.toFixed(2);
 }
 
 // # utility 2
@@ -45,7 +45,7 @@ function recFinalResult(){
     const rectangleResult = parseFloat(rectangleString);
 
     const newRectangleResult= rectangleCalculationResult+ rectangleResult;
-    rectangleField.innerText= newRectangleResult;
+    rectangleField.innerText= newRectangleResult.toFixed(2);
 }
 
 // ! UTILITY
@@ -74,7 +74,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
     const parallelogram = parseFloat(parallelogramString);
 
     const parallelogramFinal= parallelogramResult+ parallelogram;
-    parallelogramField.innerText= parallelogramFinal;
+    parallelogramField.innerText= parallelogramFinal.toFixed(2);
 });
 
 // # btn-rhombus
@@ -90,7 +90,7 @@ document.getElementById('btn-rhombus').addEventListener('click', function(){
     const rhombus = parseFloat(rhombusString);
     
     const rhombusFinal= rhombusResult+ rhombus;
-    rhombusField.innerText= rhombusFinal;
+    rhombusField.innerText= rhombusFinal.toFixed(2);
     
 });
 
@@ -99,14 +99,14 @@ document.getElementById('btn-pentagon').addEventListener('click', function(){
     const bPentagon= parseInt(6);
     const hPentagon= parseInt(10);
 
-    const pentagonResult= hPentagon* bPentagon;
+    const pentagonResult= 0.5* hPentagon* bPentagon;
 
     const pentagonField= document.getElementById('pentagon-result');
     const pentagonString= pentagonField.innerText;
     const pentagon = parseFloat(pentagonString);
 
     const pentagonFinal= pentagonResult+ pentagon;
-    pentagonField.innerText= pentagonFinal;
+    pentagonField.innerText= pentagonFinal.toFixed(2);
 });
 
 // # btn-ellipse
@@ -121,5 +121,5 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
     const ellipse = parseFloat(ellipseString);
 
     const ellipseFinal= ellipseResult+ ellipse;
-    ellipseField.innerText= ellipseFinal;
+    ellipseField.innerText= ellipseFinal.toFixed(2);
 });
