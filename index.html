@@ -78,22 +78,22 @@
         <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
           <img class="images" src="images/rectangle.png" alt="" />
           <p class="text-slate-600 text-3xl font-semibold my-4">Rectangle</p>
-          <p class="text-base text-slate-600">Area (A) = Area (A) = w X l</p>
+          <p class="text-base text-slate-600">Area (A) = w X l</p>
           <div class="grid md:grid-cols-4 items-center justify-center mt-6">
-            <input id="b-"
+            <input id="w-rectangle"
               class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
               type="text"
-              placeholder="b-rectangle"
+              placeholder="W"
             />
             <p class="m-2 text-lg text-slate-600">cm</p>
-            <input id="h-rectangle"
+            <input id="l-rectangle"
               class="text-slate-800 text-lg md:w-32 w-48 pl-4 py-2 bg-slate-300 rounded"
               type="text"
-              placeholder="h"
+              placeholder="L"
             />
             <p class="m-2 text-lg text-slate-600">cm</p>
           </div>
-          <button
+          <button id="btn-rectangle"
             class="text-white text-2xl font-bold px-6 bg-blue-400 rounded"
           >
             Calculate
@@ -107,8 +107,8 @@
             Parallelogram
           </p>
           <p class="text-base text-slate-600">Area (A) = b X h</p>
-          <p class="text-xl text-slate-600">b=10cm, h=12cm</p>
-          <button
+          <p class="text-xl text-slate-600">b= 10cm, h=12 cm</p>
+          <button id="btn-parallelogram"
             class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
           >
             Calculate
@@ -117,76 +117,126 @@
 
         <!-- ! result -->
 
-        <!-- # triangle -->
-        <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
-          <p class="text-2xl underline text-slate-600">Area Calculation</p>
-          <div class="flex">
+        <div class="border-2 pb-10 px-3 pt-8 rounded text-center">
+          <p class="text-2xl underline text-slate-600 mb-3">Area Calculation</p>
+          
+          <!-- # triangle -->
+          <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
             <p>
-              1. Triangle<span id="triangle-result" class="ml-2">00 cm<sup>2</sup></span>
+              1. Triangle<span id="triangle-result" class="ml-2">00</span> cm<sup>2</sup>
             </p>
             <button
-              class="text-white text-lg font-bold ml-2 px-2 bg-blue-400 rounded"
+              class="text-white text-base font-bold ml-2 px-2 bg-blue-400 rounded"
             >
               Convert to m<sup>2</sup>
             </button>
           </div>
-
+          
           <!-- # rectangle -->
-          <div class="flex">
+          <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
             <p>
-              1. Rectangle<span id="rectangle-result" class="ml-2">00 cm<sup>2</sup></span>
+              2. Rectangle<span id="rectangle-result" class="ml-2">00</span> cm<sup>2</sup>
             </p>
             <button
-              class="text-white text-lg font-bold ml-2 px-2 bg-blue-400 rounded"
+            class="text-white text-base font-bold ml-2 px-2 bg-blue-400 rounded"
             >
-              Convert to m<sup>2</sup>
-            </button>
-          </div>
-        </div>
-
-        <!-- # rhombus  -->
-        <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
-          <img class="images" src="images/rhombus.png" alt="" />
-          <p class="text-slate-600 text-3xl font-semibold my-4">Rhombus</p>
-          <p class="text-base text-slate-600">
-            Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub>
-          </p>
-          <p class="text-xl text-slate-600">
-            d<sub>1</sub> = 16cm d<sub>2</sub> = 8cm
-          </p>
-          <button
-            class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
-          >
-            Calculate
+            Convert to m<sup>2</sup>
           </button>
         </div>
+        
+        <!-- # parallelogram -->
+        <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 text-sm">
+          <p>
+            3. Parallelogram<span id="parallelogram-result" class="ml-2">00</span> cm<sup>2</sup>
+          </p>
+          <button
+          class="text-white text-base font-bold ml-2 px-2 bg-blue-400 rounded"
+          >
+          Convert to m<sup>2</sup>
+        </button>
+      </div>
+      <!-- # rhombus -->
+      <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 text-sm">
+        <p>
+          3. Rhombus<span id="rhombus-result" class="ml-2">00</span> cm<sup>2</sup>
+        </p>
+        <button
+        class="text-white text-lg font-bold ml-2 px-2 bg-blue-400 rounded"
+        >
+        Convert to m<sup>2</sup>
+      </button>
+    </div>
+    <!-- # pentagon -->
+    <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 text-sm">
+      <p>
+        3. Pentagon<span id="pentagon-result" class="ml-2">00</span> cm<sup>2</sup>
+      </p>
+      <button
+      class="text-white text-lg font-bold ml-2 px-2 bg-blue-400 rounded"
+      >
+      Convert to m<sup>2</sup>
+    </button>
+  </div>
+
+  <!-- # ellipse -->
+    <div class="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 text-sm">
+    <p>
+      3. Ellipse<span id="ellipse-result" class="ml-2">00</span> cm<sup>2</sup>
+    </p>
+    <button
+    class="text-white text-lg font-bold ml-2 px-2 bg-blue-400 rounded"
+    >
+    Convert to m<sup>2</sup>
+    </button>
+   </div>
+    
+    </div>
+        <!-- ! result end -->
+
+    <!-- # rhombus  -->
+    <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
+      <img class="images" src="images/rhombus.png" alt="" />
+      <p class="text-slate-600 text-3xl font-semibold my-4">Rhombus</p>
+      <p class="text-base text-slate-600">
+        Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub>
+      </p>
+      <p class="text-xl text-slate-600">
+        d<sub>1</sub> = 16cm d<sub>2</sub> = 8cm
+      </p>
+      <button id="btn-rhombus"
+      class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
+      >
+      Calculate
+    </button>
+  </div>
 
         <!-- # pentagon -->
         <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
           <img class="images" src="images/pentagon.png" alt="" />
           <p class="text-slate-600 text-3xl font-semibold my-4">Pentagon</p>
-          <p class="text-base text-slate-600">Area (A) = 0.5 p b</p>
+          <p class="text-base text-slate-600">Area (A) = 0.5 X p X b</p>
           <p class="text-xl text-slate-600">p = 6cm, b = 10cm</p>
-          <button
-            class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
+          <button id="btn-pentagon"
+          class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
           >
-            Calculate
-          </button>
-        </div>
-
-        <!-- # ellipse -->
-        <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
-          <img class="images" src="images/ellipse.png" alt="" />
-          <p class="text-slate-600 text-3xl font-semibold my-4">Ellipse</p>
-          <p class="text-base text-slate-600">Area (A) = ab</p>
-          <p class="text-xl text-slate-600">a = 10cm, b = 4cm</p>
-          <button
-            class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
-          >
-            Calculate
-          </button>
-        </div>
+          Calculate
+        </button>
       </div>
+      
+      <!-- # ellipse -->
+      <div class="border-2 pb-10 px-10 pt-8 rounded text-center">
+        <img class="images" src="images/ellipse.png" alt="" />
+        <p class="text-slate-600 text-3xl font-semibold my-4">Ellipse</p>
+        <p class="text-base text-slate-600 flex mx-auto justify-center items-center">Area (A) =<img class="w-3 mx-2" src="images/43102.png" alt="pi"> ab</p>
+        <p class="text-xl text-slate-600">a = 10cm, b = 4cm</p>
+        <button id="btn-ellipse"
+        class="text-white text-2xl font-bold px-6 mt-20 bg-blue-400 rounded"
+        >
+        Calculate
+      </button>
+    </div>
+  </div>
+</div>
     </section>
 
     <!-- !JS -->
